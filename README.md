@@ -129,7 +129,8 @@ and issue appropriate commands
   
  ## Output
   
-  
+  <img width="718" height="418" alt="tellnet" src="https://github.com/user-attachments/assets/20fdfa48-2900-425f-8753-6f9023bd7b16" />
+
 
 ## nmap –script smtp-enum-users.nse <hostname>
 
