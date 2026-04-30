@@ -92,6 +92,9 @@ Top level domain expansion
 <img width="836" height="283" alt="image" src="https://github.com/user-attachments/assets/cf1aeb66-abd5-493e-a9ab-103c75d378f0" />
 
 
+This image shows the output of the dnsrecon tool attempting to enumerate DNS records for myntra.com. The scan encountered several errors, specifically "Network is unreachable," which indicates that the tool could not connect to the name servers to retrieve the requested information.
+
+
 
 
 ## dnsenum
@@ -110,6 +113,8 @@ This program is useful for pentesters, ethical hackers and forensics experts. It
 
 <img width="545" height="349" alt="image" src="https://github.com/user-attachments/assets/f048e4b7-23ed-48af-9c5e-6c3251cb80f8" />
 
+This image shows the output of the dnsenum tool trying to gather DNS information for myntra.com. Similar to your previous attempts, it failed with a "Network is unreachable" error, confirming that your Kali Linux environment currently lacks an active connection to the internet or the target DNS servers.
+
 
 ## smtp-user-enum
 Username guessing tool primarily for use against the default Solaris SMTP service. Can use either EXPN, VRFY or RCPT TO.
@@ -120,6 +125,9 @@ In metasploit list all the usernames using head /etc/passwd or cat /etc/passwd:
 select any username in the first column of the above file and check the same
 
 <img width="756" height="359" alt="image" src="https://github.com/user-attachments/assets/0ac5437b-55de-46fc-9448-152da0154518" />
+
+This image shows the output of the smtp-user-enum tool, which is used to check if a specific username (in this case, "root") exists on a mail server. The scan used the VRFY method against the IP 23.36.53.10 but returned 0 results, meaning the server either doesn't have that user or has disabled that specific enumeration method for security.
+
 
 
 # Telnet for smtp enumeration
@@ -140,6 +148,8 @@ The smtp-enum-users.nse script attempts to enumerate the users on a SMTP server 
 ## OUTPUT:
 
 <img width="745" height="190" alt="image" src="https://github.com/user-attachments/assets/e402a278-8fa8-49c9-aa21-0dc02990d5e6" />
+
+This image shows an Nmap scan attempting to use the smtp-commands script on port 25 for the IP address 23.36.53.10. The scan failed with a "failed to determine route" error, which is another clear sign that your system currently has no active network connection to reach that external target.
 
 
 ## RESULT:
